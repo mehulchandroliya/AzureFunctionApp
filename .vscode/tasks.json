@@ -35,6 +35,37 @@
             }
         },
         {
+            "label": "test clean",
+            "command": "rm",
+            "args": [
+                "-r",
+                "TestResults"
+            ],
+            "type": "process",
+            "problemMatcher": "$msCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/AzureFunctionApp.FunctionBusiness.Tests"
+            }
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "args": [
+                "test",
+                "--settings",
+                "runsettings.xml"
+            ],
+            "type": "process",
+            "dependsOn": [
+                "build",
+                "test clean"
+            ],
+            "problemMatcher": "$msCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/AzureFunctionApp.FunctionBusiness.Tests"
+            }
+        },
+        {
             "label": "clean release",
             "command": "dotnet",
             "args": [
@@ -91,7 +122,9 @@
         {
             "type": "shell",
             "label": "run",
-            "dependsOn": ["build"],
+            "dependsOn": [
+                "build"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}/AzureFunctionApp.Functions/bin/Debug/netcoreapp2.1"
             },
