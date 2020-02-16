@@ -23,6 +23,6 @@ https://github.com/Azure/azure-functions-templates/wiki/Using-the-templates-dire
 Test Report
 <div align="center">
 
-![Input and output](https://danielpalme.github.io/ReportGenerator/resources/input_output.png)
+![Image alt text](./Resources/coverage-report.PNG)
 
 </div>
