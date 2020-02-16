@@ -20,3 +20,9 @@ dotnet new --install Microsoft.Azure.WebJobs.ItemTemplates::2.0.10369
 =====================================================================
 https://github.com/Azure/azure-functions-templates/wiki/Using-the-templates-directly-via-dotnet-new
 
+Test Report
+<div align="center">
+
+![Input and output](https://danielpalme.github.io/ReportGenerator/resources/input_output.png)
+
+</div>
